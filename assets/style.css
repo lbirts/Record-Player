@@ -1,0 +1,165 @@
+body {
+    background: #293F4F;
+}
+#Record {
+    transform-origin: 355px 300px;
+    /* animation: spin 5s infinite linear; */
+}
+
+#Arm {
+    transform-origin: 655px 175px;
+    /* animation: move-arm 5s forwards; */
+}
+
+/* #ONOFFColor, #on-color, #level1, #level2, #level3, #level4, #level5, #level6, #level7, #level8, #level9 {
+    fill: #1e93f6;
+} */
+
+.oneblue {
+    animation: volumecolor 0.9s forwards;
+}
+
+.twoblue {
+    animation: volumecolor 1.3s forwards;
+}
+
+.threeblue {
+    animation: volumecolor 1.5s forwards;
+}
+
+.fourblue {
+    animation: volumecolor 1.8s forwards;
+}
+
+.fiveblue {
+    animation: volumecolor 2.1s forwards;
+}
+
+.sixblue {
+    animation: volumecolor 2.4s forwards;
+}
+
+.sevenblue {
+    animation: volumecolor 2.7s forwards;
+}
+
+.eightblue {
+    animation: volumecolor 3s forwards;
+}
+
+.nineblue {
+    animation: volumecolor 3.3s forwards;
+}
+
+
+.onblue {
+    animation: oncolor 0.3s forwards;
+}
+
+.knobblue {
+    animation: knobcolor 0.3s forwards;
+}
+
+/* #VolumeKnob {
+     transform: translateY(-64px); 
+} */
+
+#Axis {
+    transform-origin: 353px 299px;
+}
+
+.record-spin {
+    animation: 9s spin 3s infinite linear;
+}
+
+.reverse-record {
+    animation: rev 9s infinite linear;
+}
+
+.move-arm {
+    animation: move-arm 3s forwards;
+}
+
+.axis-spin {
+    animation: 2s spin 4s infinite linear;
+}
+
+.reverse-axis {
+    animation: rev 2s infinite linear;
+}
+
+.up-volume {
+    animation: turn-up 1s forwards;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rev {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+
+@keyframes move-arm {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes turn-up {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-64px);
+    }
+}
+
+@keyframes oncolor {
+    0% {
+        fill: #4f4f4f;
+    }
+    100% {
+        fill: #1e93f6;
+    }
+}
+@keyframes knobcolor {
+    0% {
+        fill: #507189;
+    }
+    100% {
+        fill: #1e93f6;
+    }
+}
+@keyframes volumecolor {
+    0% {
+        fill: #bcbec0;
+    }
+    100% {
+        fill: #1e93f6;
+    }
+}
+
+
+
+
